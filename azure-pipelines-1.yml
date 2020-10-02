@@ -20,7 +20,7 @@ steps:
     tasks: 'assembleDebug'
 - task: AppCenterDistribute@3
   inputs:
-    serverEndpoint: 'App'
+    serverEndpoint: 'App1'
     appSlug: 'myan20/Sample-Android-App'
     appFile: '.'
     releaseNotesOption: 'input'
