@@ -25,6 +25,7 @@ steps:
     apksignerKeystorePassword: '20200312'
     apksignerKeystoreAlias: 'key0'
     apksignerKeyPassword: '20200312'
+    zipalign: false
 - task: AppCenterDistribute@3
   inputs:
     serverEndpoint: 'App1'
