@@ -20,7 +20,7 @@ steps:
     tasks: 'assembleDebug'    
 - task: AndroidSigning@3
   inputs:
-    apkFiles: '**/*.apk'
+    apkFiles: '*.apk'
     apksignerKeystoreFile: 'keystorefile1.jks'
     apksignerKeystorePassword: '20200312'
     apksignerKeystoreAlias: 'key0'
@@ -30,7 +30,7 @@ steps:
   inputs:
     serverEndpoint: 'App1'
     appSlug: 'myan20/Sample-Android-App'
-    appFile: '../*.apk'
+    appFile: '*.apk'
     releaseNotesOption: 'input'
     releaseNotesInput: 'First release'
     destinationType: 'groups'
