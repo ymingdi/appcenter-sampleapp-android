@@ -29,8 +29,8 @@ steps:
 - task: AppCenterDistribute@3
   inputs:
     serverEndpoint: 'App1'
-    appSlug: 'myan20/Sample-Android-App'
-    appFile: '*.apk'
+    appSlug: 'ymingdi/Sample-Android-App'
+    appFile: '**/*.apk'
     releaseNotesOption: 'input'
     releaseNotesInput: 'First release'
     destinationType: 'groups'
