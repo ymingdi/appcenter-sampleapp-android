@@ -28,7 +28,7 @@ steps:
     zipalign: false
 - task: AppCenterDistribute@3
   inputs:
-    serverEndpoint: 'App1'
+    serverEndpoint: 'App'
     appSlug: 'ymingdi/Sample-Android-App'
     appFile: '**/*.apk'
     releaseNotesOption: 'input'
