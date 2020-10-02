@@ -18,3 +18,11 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'assembleDebug'
+- task: AppCenterDistribute@3
+  inputs:
+    serverEndpoint: 'App'
+    appSlug: 'myan20/Sample-Android-App'
+    appFile: '.'
+    releaseNotesOption: 'input'
+    releaseNotesInput: 'First release'
+    destinationType: 'groups'
